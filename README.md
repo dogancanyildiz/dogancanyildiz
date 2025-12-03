@@ -62,22 +62,20 @@
 
 ## 📊 GitHub İstatistikleri
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dogancanyildiz&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dogancanyildiz&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="165" />
-</p>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dogancanyildiz&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&show_icons=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dogancanyildiz&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dogancanyildiz&theme=tokyonight&hide_border=false" />
-</p>
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=dogancanyildiz&theme=tokyonight&hide_border=false)
 
 ---
 
 ## 🐍 Contribution Snake
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake-dark.svg" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake.svg" />
+</picture>
 
 ---
 

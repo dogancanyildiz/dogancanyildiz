@@ -1,0 +1,33 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Her gün gece yarısı çalışır
+  workflow_dispatch: # Manuel çalıştırma için
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: Platane/snk@master
+        id: snake-gif
+        with:
+          github_user_name: dogancanyildiz
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          
+      - uses: Platane/snk@master
+        id: snake-gif-dark
+        with:
+          github_user_name: dogancanyildiz
+          svg_out_path: dist/github-contribution-grid-snake-dark.svg
+          
+      - name: Push to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          destination_dir: output
+
