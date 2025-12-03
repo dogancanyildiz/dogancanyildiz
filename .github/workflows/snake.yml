@@ -8,26 +8,37 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
       
-      - uses: Platane/snk@master
+      - name: Generate snake animation
+        uses: Platane/snk@master
         id: snake-gif
         with:
           github_user_name: dogancanyildiz
           svg_out_path: dist/github-contribution-grid-snake.svg
           
-      - uses: Platane/snk@master
+      - name: Generate snake animation (dark)
+        uses: Platane/snk@master
         id: snake-gif-dark
         with:
           github_user_name: dogancanyildiz
           svg_out_path: dist/github-contribution-grid-snake-dark.svg
           
       - name: Push to output branch
-        uses: peaceiris/actions-gh-pages@v3
-        if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          destination_dir: output
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b output 2>/dev/null || git checkout output || true
+          mkdir -p output
+          cp dist/*.svg output/ 2>/dev/null || true
+          git add output/*.svg
+          git commit -m "Update contribution snake" || exit 0
+          git push origin output --force
 
