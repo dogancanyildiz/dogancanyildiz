@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="Dravcore footer">
+  <defs>
+    <linearGradient id="ft-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00C896" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00C896" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#00C896" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ft-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080b0a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00C896" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="120" fill="url(#ft-bg)"/>
+  <line x1="120" y1="28" x2="1080" y2="28" stroke="url(#ft-line)" stroke-width="1"/>
+  <text x="600" y="62" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f4f7f5" letter-spacing="3">DRAVCORE</text>
+  <text x="600" y="88" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#00C896" letter-spacing="3.5">&#214;Z&#220;N &#350;EK&#304;L BULDU&#286;U YER</text>
+</svg>
