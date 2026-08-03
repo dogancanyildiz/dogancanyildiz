@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Dogan Can Yildiz - Developer DevOps">
+  <defs>
+    <radialGradient id="dc-vignette" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0" stop-color="#10241f" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#0c0c0e" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.78"/>
+    </radialGradient>
+
+    <linearGradient id="dc-teal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dffd0"/>
+      <stop offset="0.45" stop-color="#00C896"/>
+      <stop offset="1" stop-color="#03624C"/>
+    </linearGradient>
+
+    <linearGradient id="dc-shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00C896" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#00C896" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#d7fff0"/>
+      <stop offset="0.58" stop-color="#00C896" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00C896" stop-opacity="0"/>
+      <animate attributeName="x1" values="-1;1;-1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2;0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="dc-scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00C896" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00C896" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#00C896" stop-opacity="0"/>
+      <animate attributeName="y1" values="-0.4;1.2;-0.4" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="0;1.6;0" dur="10s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="dc-grain">
+      <feTurbulence baseFrequency="1.15" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.05 0 0 0 0 0.55 0 0 0 0 0.42 0 0 0 0.03 0"/>
+    </filter>
+
+    <filter id="dc-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="#080b0a"/>
+  <rect width="1200" height="420" fill="url(#dc-vignette)"/>
+  <rect width="1200" height="420" fill="url(#dc-scan)"/>
+  <rect width="1200" height="420" filter="url(#dc-grain)" opacity="0.7"/>
+
+  <rect x="56" y="56" width="1088" height="308" fill="none" stroke="#00C896" stroke-width="0.7" opacity="0.85"/>
+  <rect x="62" y="62" width="1076" height="296" fill="none" stroke="#00C896" stroke-width="0.4" opacity="0.35"/>
+
+  <g stroke="#00C896" stroke-width="0.7" fill="none" opacity="0.9">
+    <path d="M 56 78 L 56 56 L 78 56"/>
+    <path d="M 1122 56 L 1144 56 L 1144 78"/>
+    <path d="M 1144 342 L 1144 364 L 1122 364"/>
+    <path d="M 78 364 L 56 364 L 56 342"/>
+  </g>
+
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" letter-spacing="4.5" fill="#00C896">
+    <text x="78" y="40">EST. MMXXI</text>
+    <text x="1122" y="40" text-anchor="end">DRAVCORE &#183; ANKARA &#183; TR</text>
+  </g>
+
+  <text x="600" y="198" text-anchor="middle" font-family="Playfair Display, Bodoni Moda, Georgia, serif" font-size="156" font-weight="500" font-style="italic" fill="url(#dc-teal)" filter="url(#dc-glow)" opacity="0.35">DC</text>
+  <text x="600" y="198" text-anchor="middle" font-family="Playfair Display, Bodoni Moda, Georgia, serif" font-size="156" font-weight="500" font-style="italic" fill="url(#dc-teal)">DC</text>
+  <text x="600" y="198" text-anchor="middle" font-family="Playfair Display, Bodoni Moda, Georgia, serif" font-size="156" font-weight="500" font-style="italic" fill="url(#dc-shimmer)">DC</text>
+
+  <line x1="530" y1="222" x2="670" y2="222" stroke="#00C896" stroke-width="0.7" opacity="0.75"/>
+  <circle cx="600" cy="222" r="2.2" fill="#00C896"/>
+
+  <text x="600" y="262" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="30" font-weight="400" fill="#f4f7f5" letter-spacing="4">DO&#286;AN CAN YILDIZ</text>
+  <text x="600" y="292" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#00C896" letter-spacing="5.5">&#8212; DEVELOPER &#183; DEVOPS &#183; MATH &amp; CS &#8212;</text>
+  <text x="600" y="328" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="15" fill="#9bb5ab">&#8220;From essence to order.&#8221;</text>
+
+  <text x="600" y="392" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#7f958c" letter-spacing="4.5">DOGANCANYILDIZ.COM  &#183;  DEVELOPER@DOGANCANYILDIZ.COM  &#183;  IN/DOGANCANYILDIZ</text>
+</svg>
