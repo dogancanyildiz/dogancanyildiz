@@ -107,19 +107,19 @@ Currently building **[Dravcore](https://dravcore.com)** — virtualization, self
 
 <p align="center">
   <a href="https://github.com/dogancanyildiz/wikonya">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dogancanyildiz&repo=wikonya&theme=transparent&hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4&icon_color=00C896" alt="wikonya" />
+    <img src="./assets/stats/pin-wikonya.svg" alt="wikonya" />
   </a>
   <a href="https://github.com/dogancanyildiz/gpa">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dogancanyildiz&repo=gpa&theme=transparent&hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4&icon_color=00C896" alt="gpa" />
+    <img src="./assets/stats/pin-gpa.svg" alt="gpa" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/dogancanyildiz/bilet-satin-alma">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dogancanyildiz&repo=bilet-satin-alma&theme=transparent&hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4&icon_color=00C896" alt="bilet-satin-alma" />
+    <img src="./assets/stats/pin-bilet-satin-alma.svg" alt="bilet-satin-alma" />
   </a>
   <a href="https://github.com/dogancanyildiz/MegaYazilimAkademisiBitirmeProjesi">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dogancanyildiz&repo=MegaYazilimAkademisiBitirmeProjesi&theme=transparent&hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4&icon_color=00C896" alt="Mega Yazılım Akademisi Bitirme" />
+    <img src="./assets/stats/pin-MegaYazilimAkademisiBitirmeProjesi.svg" alt="Mega Yazılım Akademisi Bitirme" />
   </a>
 </p>
 
@@ -144,21 +144,13 @@ Currently building **[Dravcore](https://dravcore.com)** — virtualization, self
 ## GitHub Signals
 
 <p align="center">
-  <img height="168" src="https://github-readme-stats.vercel.app/api?username=dogancanyildiz&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=080b0a&title_color=00C896&icon_color=00C896&text_color=c9ddd4&ring_color=00C896" alt="GitHub stats" />
+  <img height="168" src="./assets/stats/stats.svg" alt="GitHub stats" />
   <img height="168" src="https://streak-stats.demolab.com?user=dogancanyildiz&hide_border=true&background=080b0a&ring=00C896&fire=00C896&currStreakLabel=00C896&sideLabels=9bb5ab&dates=7f958c&currStreakNum=f4f7f5&sideNums=c9ddd4&stroke=03624C" alt="GitHub streak" />
 </p>
 
 <p align="center">
-  <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dogancanyildiz&layout=compact&include_all_commits=true&count_private=true&hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4" alt="Top languages" />
+  <img height="168" src="./assets/stats/top-langs.svg" alt="Top languages" />
 </p>
-
-<details>
-<summary><b>Trophies</b></summary>
-<br/>
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dogancanyildiz&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="GitHub trophies" />
-</p>
-</details>
 
 <p align="center">
   <img src="./assets/divider.svg" alt="" width="70%" />
@@ -167,14 +159,14 @@ Currently building **[Dravcore](https://dravcore.com)** — virtualization, self
 ## Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dogancanyildiz&bg_color=080b0a&color=00C896&line=00C896&point=f4f7f5&area=true&hide_border=true&area_color=03624C" alt="Contribution activity graph" />
+  <img src="./assets/stats/activity.svg" alt="Contribution activity graph" />
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/dogancanyildiz/dogancanyildiz/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snake/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution snake" src="./assets/snake/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 
