@@ -46,7 +46,7 @@ Currently building **[Dravcore](https://dravcore.com)** — virtualization, self
 | **Company** | BerrSoft Bilgi Teknolojileri |
 | **Focus** | Full-Stack · DevOps · Self-Hosting |
 | **Stack core** | Go · TypeScript · Docker · Coolify · Traefik |
-| **Contact** | [developer@dogancanyildiz.com](mailto:developer@dogancanyildiz.com) |
+| **Contact** | [me@dogancanyildiz.com](mailto:me@dogancanyildiz.com) |
 
 <p align="center">
   <img src="./assets/divider.svg" alt="" width="70%" />
