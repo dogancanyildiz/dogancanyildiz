@@ -116,12 +116,7 @@ All six case studies: [dogancanyildiz.com/en/projects](https://www.dogancanyildi
 
 Notes from running real things: Docker images, client IPs behind Cloudflare and Traefik, self-hosting with Coolify, a CAPT prep lab. Turkish originals with English editions.
 
-<!-- BLOG-POST-LIST:START -->
-- [Running Next.js in Docker with multi-stage builds and a non-root user](https://www.dogancanyildiz.com/en/blog/nextjs-docker-multi-stage-non-root) · Sep 3, 2026
-- [Reading the real client IP behind Cloudflare and Traefik](https://www.dogancanyildiz.com/en/blog/reading-the-real-client-ip) · Sep 3, 2026
-- [How this site ships to my own server with Coolify](https://www.dogancanyildiz.com/en/blog/self-hosting-with-coolify) · Aug 20, 2026
-- [Most of my CAPT preparation happened in a Docker lab](https://www.dogancanyildiz.com/en/blog/capt-preparation-in-a-docker-lab) · Jul 15, 2026
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->- [Running Next.js in Docker with multi-stage builds and a non-root user](https://www.dogancanyildiz.com/en/blog/nextjs-docker-multi-stage-non-root) · Sep 3, 2026- [Reading the real client IP behind Cloudflare and Traefik](https://www.dogancanyildiz.com/en/blog/reading-the-real-client-ip) · Sep 3, 2026- [How this site ships to my own server with Coolify](https://www.dogancanyildiz.com/en/blog/self-hosting-with-coolify) · Aug 20, 2026- [Most of my CAPT preparation happened in a Docker lab](https://www.dogancanyildiz.com/en/blog/capt-preparation-in-a-docker-lab) · Jul 15, 2026<!-- BLOG-POST-LIST:END -->
 
 More at [dogancanyildiz.com/en/blog](https://www.dogancanyildiz.com/en/blog) · [RSS](https://www.dogancanyildiz.com/en/feed.xml)
 
