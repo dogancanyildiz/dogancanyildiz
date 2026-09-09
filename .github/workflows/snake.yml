@@ -1,32 +1,32 @@
-name: Generate Snake Animation
+name: Contribution snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - ".github/workflows/snake.yml"
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate contribution snakes
+      - name: Generate
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/snake/github-contribution-grid-snake.svg
-            assets/snake/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00C896
+            assets/snake/github-contribution-grid-snake.svg?palette=github-light&color_snake=#007041
+            assets/snake/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#4fcc8d
 
-      - name: Commit snake assets
+      - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

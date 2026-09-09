@@ -1,54 +1,65 @@
-name: Update README Stats Cards
+name: Refresh stats cards
+
+# The README embeds these as files instead of live image URLs so the profile
+# never shows a broken card when github-readme-stats is rate limited or down.
+# Every fetch is best effort: a service that fails today keeps yesterday's
+# file, and the job only fails if a downloaded file is not an SVG at all.
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 3 * * *" # 06:00 Europe/Istanbul
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - ".github/workflows/stats-cards.yml"
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+permissions:
+  contents: write
 
-      - name: Generate stats cards
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch cards (best effort)
         env:
           BASE: https://github-readme-stats.shion.dev
-          OPTS: hide_border=true&bg_color=080b0a&title_color=00C896&text_color=c9ddd4&icon_color=00C896
+          USER: dogancanyildiz
+          # Site palette: docs/03-tasarim-ui-ux.md in dogancanyildiz/dogancanyildiz.com
+          DARK: hide_border=true&bg_color=0a0c0f&title_color=4fcc8d&text_color=c9ced4&icon_color=4fcc8d&border_radius=12
+          LIGHT: hide_border=true&bg_color=f9fafb&title_color=007041&text_color=1f2428&icon_color=007041&border_radius=12
         run: |
-          set -euo pipefail
+          set -uo pipefail
           mkdir -p assets/stats
-
-          curl -fsSL --max-time 60 -o assets/stats/stats.svg \
-            "${BASE}/api?username=dogancanyildiz&show_icons=true&include_all_commits=true&count_private=true&${OPTS}&ring_color=00C896"
-
-          curl -fsSL --max-time 60 -o assets/stats/top-langs.svg \
-            "${BASE}/api/top-langs/?username=dogancanyildiz&layout=compact&include_all_commits=true&count_private=true&${OPTS}"
-
-          for repo in wikonya gpa bilet-satin-alma MegaYazilimAkademisiBitirmeProjesi; do
-            curl -fsSL --max-time 60 -o "assets/stats/pin-${repo}.svg" \
-              "${BASE}/api/pin/?username=dogancanyildiz&repo=${repo}&${OPTS}"
+          fetch() { # fetch <out> <url>
+            tmp="$(mktemp)"
+            if curl -fsSL --max-time 60 -o "$tmp" "$2" && grep -q '<svg' "$tmp"; then
+              mv "$tmp" "$1"; echo "ok   $1"
+            else
+              rm -f "$tmp"; echo "skip $1 (kept previous file)"
+            fi
+          }
+          for theme in dark light; do
+            opts="$DARK"; [ "$theme" = light ] && opts="$LIGHT"
+            fetch "assets/stats/stats-${theme}.svg" \
+              "${BASE}/api?username=${USER}&show_icons=true&include_all_commits=true&count_private=true&${opts}"
+            fetch "assets/stats/top-langs-${theme}.svg" \
+              "${BASE}/api/top-langs/?username=${USER}&layout=compact&include_all_commits=true&count_private=true&${opts}"
+            for repo in dogancanyildiz.com wikonya bilet-satin-alma gpa; do
+              fetch "assets/stats/pin-${repo}-${theme}.svg" \
+                "${BASE}/api/pin/?username=${USER}&repo=${repo}&${opts}"
+            done
           done
-
-          curl -fsSL --max-time 60 -o assets/stats/activity.svg \
-            "https://github-readme-activity-graph.vercel.app/graph?username=dogancanyildiz&bg_color=080b0a&color=00C896&line=00C896&point=f4f7f5&area=true&hide_border=true&area_color=03624C"
-
-          # Basic sanity: files must look like SVG
           for f in assets/stats/*.svg; do
             grep -q '<svg' "$f" || { echo "invalid svg: $f"; exit 1; }
           done
 
-      - name: Commit updated cards
+      - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/stats/*.svg
-          git commit -m "chore: refresh README stats cards" || exit 0
+          git commit -m "chore: refresh stats cards" || exit 0
           git push
