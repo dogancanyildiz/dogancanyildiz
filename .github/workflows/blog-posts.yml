@@ -1,0 +1,28 @@
+name: Latest posts
+
+# Writes the newest posts from the site's English feed between the
+# BLOG-POST-LIST markers in README.md.
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://www.dogancanyildiz.com/en/feed.xml"
+          max_post_count: 4
+          template: "- [$title]($url) · $date"
+          date_format: "mmm d, yyyy"
+          commit_message: "chore: update latest posts"
+          committer_username: "github-actions[bot]"
+          committer_email: "41898282+github-actions[bot]@users.noreply.github.com"
