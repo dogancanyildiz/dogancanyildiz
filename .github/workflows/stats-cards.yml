@@ -35,7 +35,9 @@ jobs:
           mkdir -p assets/stats
           fetch() { # fetch <out> <url>
             tmp="$(mktemp)"
-            if curl -fsSL --max-time 60 -o "$tmp" "$2" && grep -q '<svg' "$tmp"; then
+            # An error card is a valid SVG that says "Something went wrong";
+            # keep yesterday's real card instead of publishing it.
+            if curl -fsSL --max-time 60 -o "$tmp" "$2" && grep -q '<svg' "$tmp" && ! grep -q 'Something went wrong' "$tmp"; then
               mv "$tmp" "$1"; echo "ok   $1"
             else
               rm -f "$tmp"; echo "skip $1 (kept previous file)"
@@ -44,9 +46,9 @@ jobs:
           for theme in dark light; do
             opts="$DARK"; [ "$theme" = light ] && opts="$LIGHT"
             fetch "assets/stats/stats-${theme}.svg" \
-              "${BASE}/api?username=${USER}&show_icons=true&include_all_commits=true&count_private=true&${opts}"
+              "${BASE}/api?username=${USER}&show_icons=true&count_private=true&${opts}"
             fetch "assets/stats/top-langs-${theme}.svg" \
-              "${BASE}/api/top-langs/?username=${USER}&layout=compact&include_all_commits=true&count_private=true&${opts}"
+              "${BASE}/api/top-langs/?username=${USER}&layout=compact&count_private=true&${opts}"
             for repo in dogancanyildiz.com wikonya bilet-satin-alma gpa; do
               fetch "assets/stats/pin-${repo}-${theme}.svg" \
                 "${BASE}/api/pin/?username=${USER}&repo=${repo}&${opts}"

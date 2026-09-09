@@ -52,9 +52,9 @@ Networking and security are part of how I build, not a product I sell: I test my
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,nextjs,react,nodejs,express,tailwind,postgres,mongodb,docker,linux,githubactions,cloudflare,git,cs,dotnet,php&theme=dark&perline=8" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts,nextjs,react,nodejs,express,tailwind,postgres,mongodb,docker,linux,githubactions,cloudflare,git,cs,dotnet,php&theme=light&perline=8" />
-    <img src="https://skillicons.dev/icons?i=ts,nextjs,react,nodejs,express,tailwind,postgres,mongodb,docker,linux,githubactions,cloudflare,git,cs,dotnet,php&theme=dark&perline=8" alt="TypeScript, Next.js, React, Node.js, Express, Tailwind, PostgreSQL, MongoDB, Docker, Linux, GitHub Actions, Cloudflare, Git, C#, .NET, PHP" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cnextjs%2Creact%2Cnodejs%2Cexpress%2Ctailwind%2Cpostgres%2Cmongodb%2Cdocker%2Clinux%2Cgithubactions%2Ccloudflare%2Cgit%2Ccs%2Cdotnet%2Cphp&theme=dark&perline=8" />
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cnextjs%2Creact%2Cnodejs%2Cexpress%2Ctailwind%2Cpostgres%2Cmongodb%2Cdocker%2Clinux%2Cgithubactions%2Ccloudflare%2Cgit%2Ccs%2Cdotnet%2Cphp&theme=light&perline=8" />
+    <img src="https://skillicons.dev/icons?i=ts%2Cnextjs%2Creact%2Cnodejs%2Cexpress%2Ctailwind%2Cpostgres%2Cmongodb%2Cdocker%2Clinux%2Cgithubactions%2Ccloudflare%2Cgit%2Ccs%2Cdotnet%2Cphp&theme=dark&perline=8" alt="TypeScript, Next.js, React, Node.js, Express, Tailwind, PostgreSQL, MongoDB, Docker, Linux, GitHub Actions, Cloudflare, Git, C#, .NET, PHP" />
   </picture>
 </p>
 
