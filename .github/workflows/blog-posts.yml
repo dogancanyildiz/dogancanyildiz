@@ -21,7 +21,7 @@ jobs:
         with:
           feed_list: "https://www.dogancanyildiz.com/en/feed.xml"
           max_post_count: 4
-          template: "- [$title]($url) · $date"
+          template: "- [$title]($url) · $date $newline"
           date_format: "mmm d, yyyy"
           commit_message: "chore: update latest posts"
           committer_username: "github-actions[bot]"
