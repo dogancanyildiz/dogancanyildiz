@@ -40,7 +40,7 @@ Networking and security are part of how I build, not a product I sell: I test my
 | **Stack** | Next.js · React · Node.js · Express · PostgreSQL · MongoDB · Docker · Coolify · Traefik · Cloudflare · Linux |
 | **Also** | C# / ASP.NET MVC · PHP · GitHub Actions · Cisco networking (CCNA track) · CAPT |
 | **Community** | GDG Konya organizer for two years, GDG Cloud Konya core team |
-| **Contact** | [me@dogancanyildiz.com](mailto:me@dogancanyildiz.com) · [WhatsApp](https://wa.me/905543828000) |
+| **Contact** | [me@dogancanyildiz.com](mailto:me@dogancanyildiz.com) · [WhatsApp](https://wa.me/905318739400) |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg" />
