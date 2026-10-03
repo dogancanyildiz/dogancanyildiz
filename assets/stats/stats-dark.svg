@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Do&#287;an Can YILDIZ's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 2058, Total PRs: 610, Total Issues: 60, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 2084, Total PRs: 637, Total Issues: 60, Contributed to (last year): 7</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 74.85527030212165;
+        stroke-dashoffset: 74.84141110103161;
       }
     }
   
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >610</text>
+      >637</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -222,7 +222,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >6</text>
+      >7</text>
     </g>
   </g>
     </svg>
