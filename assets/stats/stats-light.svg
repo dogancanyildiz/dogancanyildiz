@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Do&#287;an Can YILDIZ's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 2371, Total PRs: 954, Total Issues: 60, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 2363, Total PRs: 954, Total Issues: 60, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 74.71384292750247;
+        stroke-dashoffset: 74.71515488858483;
       }
     }
   
